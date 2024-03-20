@@ -1,0 +1,106 @@
+/* Reset default browser styles */
+
+body,
+h1,
+h2,
+form,
+input,
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Georgia', serif;
+    /* Change font to Georgia for a classy look */
+}
+
+
+/* Page layout */
+
+body {
+    background-image: url('background1.jpg'), url('background2.jpg');
+    /* Add multiple background images */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(-2px);
+    /* Apply blur filter to the background image */
+}
+
+.logo {
+    width: 150px;
+    /* Adjust according to your logo size */
+    margin: 20px auto;
+    /* Center the logo horizontally */
+    display: block;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background for better readability */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 200px);
+    /* Adjust height based on header and footer height */
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent background for better readability */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: -50px;
+    /* Move the form slightly above */
+}
+
+h2 {
+    font-size: 28px;
+    /* Reduce font size */
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    /* Reduce padding */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Semi-transparent background for better readability */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
